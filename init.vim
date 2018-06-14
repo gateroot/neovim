@@ -25,6 +25,7 @@ if dein#load_state('/Users/hiroaki/.cache/dein')
   call dein#add('vim-airline/vim-airline')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('ryanoasis/vim-devicons')
+  call dein#add('easymotion/vim-easymotion')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
@@ -104,3 +105,8 @@ nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 " Neoterm
 let g:neoterm_default_mod='belowright'
+
+" EasyMotion
+nmap s <Plug>(easymotion-s2)
+xmap s <Plug>(easymotion-s2)
+omap z <Plug>(easymotion-s2)
